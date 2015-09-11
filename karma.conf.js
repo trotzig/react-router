@@ -89,7 +89,8 @@ module.exports = function (config) {
   });
 
   if (process.env.USE_CLOUD) {
-    config.browsers = Object.keys(customLaunchers);
+    //config.browsers = Object.keys(customLaunchers);
+    config.browsers = [ 'BS_Safari' ];
     config.reporters = [ 'dots' ];
     config.browserDisconnectTimeout = 10000;
     config.browserDisconnectTolerance = 3;
